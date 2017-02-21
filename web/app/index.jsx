@@ -13,7 +13,7 @@ class App extends Component {
     return(
       <Router history={hashHistory}>
         <Route path='/' component={Container} >
-        	<IndexRoute component={Home} />
+          <IndexRoute component={Home} />
         </Route>
       </Router>
     )
@@ -22,6 +22,6 @@ class App extends Component {
 
 
 ReactDOM.render(
-	<App />,
-	document.getElementById('app')
+  <App />,
+  document.getElementById('app')
 );
