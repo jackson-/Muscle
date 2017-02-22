@@ -27359,7 +27359,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27381,31 +27381,31 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Container = function (_Component) {
-		_inherits(Container, _Component);
+	  _inherits(Container, _Component);
 	
-		function Container(props) {
-			_classCallCheck(this, Container);
+	  function Container(props) {
+	    _classCallCheck(this, Container);
 	
-			return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
-		}
+	    return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
+	  }
 	
-		_createClass(Container, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'div',
-					{ id: 'home_container' },
-					_react2.default.createElement(
-						'h1',
-						null,
-						'Home Page'
-					),
-					_react2.default.createElement(_Login2.default, null)
-				);
-			}
-		}]);
+	  _createClass(Container, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'home_container' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Home Page'
+	        ),
+	        _react2.default.createElement(_Login2.default, null)
+	      );
+	    }
+	  }]);
 	
-		return Container;
+	  return Container;
 	}(_react.Component);
 	
 	exports.default = Container;
@@ -27420,7 +27420,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27444,94 +27444,94 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Login = function (_Component) {
-		_inherits(Login, _Component);
+	  _inherits(Login, _Component);
 	
-		function Login(props) {
-			_classCallCheck(this, Login);
+	  function Login(props) {
+	    _classCallCheck(this, Login);
 	
-			var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this, props));
 	
-			_this.loginHandler = _this.loginHandler.bind(_this);
-			return _this;
-		}
+	    _this.loginHandler = _this.loginHandler.bind(_this);
+	    return _this;
+	  }
 	
-		_createClass(Login, [{
-			key: 'loginHandler',
-			value: function loginHandler(e) {
-				e.preventDefault();
-				console.log("logging in...");
-				console.log("e-mail: ", this.email.value ? this.email.value : "None");
-				console.log("password: ", this.password.value ? this.password.value : "None");
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _this2 = this;
+	  _createClass(Login, [{
+	    key: 'loginHandler',
+	    value: function loginHandler(e) {
+	      e.preventDefault();
+	      console.log("logging in...");
+	      console.log("e-mail: ", this.email.value ? this.email.value : "None");
+	      console.log("password: ", this.password.value ? this.password.value : "None");
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
 	
-				return _react2.default.createElement(
-					'form',
-					{ ref: function ref(input) {
-							return _this2.login_form = input;
-						}, className: 'login_form', onSubmit: function onSubmit(e) {
-							return _this2.loginHandler(e);
-						} },
-					_react2.default.createElement(
-						'feildset',
-						null,
-						_react2.default.createElement(
-							'legend',
-							null,
-							_react2.default.createElement(
-								'h2',
-								null,
-								'Log In'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'label',
-								{ htmlFor: 'email' },
-								'E-mail: '
-							),
-							_react2.default.createElement('input', { ref: function ref(input) {
-									return _this2.email = input;
-								}, type: 'text', name: 'email', placeholder: 'E-mail' })
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'label',
-								{ htmlFor: 'password' },
-								'Password: '
-							),
-							_react2.default.createElement('input', { ref: function ref(input) {
-									return _this2.password = input;
-								}, type: 'password', name: 'password', placeholder: 'Password' })
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'button',
-								{ type: 'submit' },
-								'Log in'
-							)
-						)
-					),
-					'Not a user? ',
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/user/new' },
-						'Sign up!'
-					)
-				);
-			}
-		}]);
+	      return _react2.default.createElement(
+	        'form',
+	        { ref: function ref(input) {
+	            return _this2.login_form = input;
+	          }, className: 'login_form', onSubmit: function onSubmit(e) {
+	            return _this2.loginHandler(e);
+	          } },
+	        _react2.default.createElement(
+	          'feildset',
+	          null,
+	          _react2.default.createElement(
+	            'legend',
+	            null,
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'Log In'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'email' },
+	              'E-mail: '
+	            ),
+	            _react2.default.createElement('input', { ref: function ref(input) {
+	                return _this2.email = input;
+	              }, type: 'text', name: 'email', placeholder: 'E-mail' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'password' },
+	              'Password: '
+	            ),
+	            _react2.default.createElement('input', { ref: function ref(input) {
+	                return _this2.password = input;
+	              }, type: 'password', name: 'password', placeholder: 'Password' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'button',
+	              { type: 'submit' },
+	              'Log in'
+	            )
+	          )
+	        ),
+	        'Not a user? ',
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/user/new' },
+	          'Sign up!'
+	        )
+	      );
+	    }
+	  }]);
 	
-		return Login;
+	  return Login;
 	}(_react.Component);
 	
 	exports.default = Login;
@@ -29109,7 +29109,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -29129,83 +29129,83 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var NewUser = function (_Component) {
-		_inherits(NewUser, _Component);
+	  _inherits(NewUser, _Component);
 	
-		function NewUser(props) {
-			_classCallCheck(this, NewUser);
+	  function NewUser(props) {
+	    _classCallCheck(this, NewUser);
 	
-			return _possibleConstructorReturn(this, (NewUser.__proto__ || Object.getPrototypeOf(NewUser)).call(this, props));
-		}
+	    return _possibleConstructorReturn(this, (NewUser.__proto__ || Object.getPrototypeOf(NewUser)).call(this, props));
+	  }
 	
-		_createClass(NewUser, [{
-			key: 'render',
-			value: function render() {
-				var _this2 = this;
+	  _createClass(NewUser, [{
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
 	
-				return _react2.default.createElement(
-					'form',
-					{ ref: function ref(input) {
-							return _this2.login_form = input;
-						}, className: 'login_form', onSubmit: function onSubmit(e) {
-							return _this2.signupHandler(e);
-						} },
-					_react2.default.createElement(
-						'feildset',
-						null,
-						_react2.default.createElement(
-							'legend',
-							null,
-							_react2.default.createElement(
-								'h2',
-								null,
-								'Create Account'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'label',
-								{ htmlFor: 'email' },
-								'E-mail: '
-							),
-							_react2.default.createElement('input', { ref: function ref(input) {
-									return _this2.email = input;
-								}, type: 'text', name: 'email', placeholder: 'E-mail', required: true })
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'label',
-								{ htmlFor: 'password' },
-								'Password: '
-							),
-							_react2.default.createElement('input', { ref: function ref(input) {
-									return _this2.password = input;
-								}, type: 'password', name: 'password', placeholder: 'Password', required: true })
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'button',
-								{ type: 'submit' },
-								'Sign up!'
-							)
-						)
-					),
-					'Have an account? ',
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/' },
-						'Log in!'
-					)
-				);
-			}
-		}]);
+	      return _react2.default.createElement(
+	        'form',
+	        { ref: function ref(input) {
+	            return _this2.login_form = input;
+	          }, className: 'login_form', onSubmit: function onSubmit(e) {
+	            return _this2.signupHandler(e);
+	          } },
+	        _react2.default.createElement(
+	          'feildset',
+	          null,
+	          _react2.default.createElement(
+	            'legend',
+	            null,
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'Create Account'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'email' },
+	              'E-mail: '
+	            ),
+	            _react2.default.createElement('input', { ref: function ref(input) {
+	                return _this2.email = input;
+	              }, type: 'text', name: 'email', placeholder: 'E-mail', required: true })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'password' },
+	              'Password: '
+	            ),
+	            _react2.default.createElement('input', { ref: function ref(input) {
+	                return _this2.password = input;
+	              }, type: 'password', name: 'password', placeholder: 'Password', required: true })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'button',
+	              { type: 'submit' },
+	              'Sign up!'
+	            )
+	          )
+	        ),
+	        'Have an account? ',
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/' },
+	          'Log in!'
+	        )
+	      );
+	    }
+	  }]);
 	
-		return NewUser;
+	  return NewUser;
 	}(_react.Component);
 	
 	exports.default = NewUser;
